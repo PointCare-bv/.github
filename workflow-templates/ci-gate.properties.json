@@ -1,0 +1,6 @@
+{
+  "name": "ci-gate (required check)",
+  "description": "The single required CI check of the PointCare-bv org rulesets. Use this when the repo has no CI yet.",
+  "iconName": "octicon check-circle",
+  "categories": ["Continuous integration"]
+}

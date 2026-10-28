@@ -1,0 +1,15 @@
+# Single required check for the org rulesets (PointCare-bv/github-config, sc-636).
+# Minimal gate for a repo without CI: it always passes. Once the repo has CI,
+# move ci-gate into that workflow so it waits for the real jobs (see github-config).
+name: ci-gate
+
+on:
+  pull_request:
+
+permissions: {}
+
+jobs:
+  ci-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "No other CI in this repo yet"
